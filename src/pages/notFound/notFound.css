@@ -1,0 +1,75 @@
+/* notFound.css */
+
+/* Main container to center everything */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* "Page not found!" text */
+.not-found-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+/* Description text */
+.not-found-text {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+/* The large 404 number */
+.not-found-code {
+  font-size: 8rem; /* Very large font size */
+  font-weight: 400;
+  color: #1a1a1a;
+  margin: 0 0 2rem 0;
+  line-height: 1;
+}
+
+/* Pink "Go Home" button */
+.home2-button {
+  background-color: #FF6A84; /* Soft pink/salmon color */
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  font-size: 1rem;
+  border-radius: 50px; /* Fully rounded capsule shape */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 500;
+}
+
+.home2-button:hover {
+  background-color: hsl(350, 100%, 61%); /* Slightly darker on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .not-found-code {
+    font-size: 5rem;
+  }
+  
+  .not-found-heading {
+    font-size: 1.5rem;
+  }
+  
+  .not-found-text {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+}

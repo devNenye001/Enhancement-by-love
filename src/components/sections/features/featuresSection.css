@@ -1,0 +1,105 @@
+/* featuresSection.css */
+
+.features-section {
+  width: 100%;
+  padding: 5rem 20px;
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Typography --- */
+.features-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 3.5rem;
+}
+
+/* --- Grid Layout --- */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 Equal Columns */
+  gap: 2rem;
+  width: 100%;
+}
+
+/* --- Card Styling --- */
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+/* Image Wrapper */
+.feature-image-wrapper {
+  width: 100%;
+  height: 350px; /* Consistent height */
+  border-radius: 24px; /* Smooth rounded corners */
+  overflow: hidden;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.feature-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Label Styling */
+.feature-label {
+  background-color: #EBEBEB; /* Light grey banner */
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.feature-card:hover .feature-label {
+  background-color: #e0e0e0; /* Slightly darker on hover */
+}
+
+.label-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cols on tablet */
+  }
+  
+  .feature-image-wrapper {
+    height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .features-heading {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr; /* 1 col on mobile */
+    gap: 3rem;
+  }
+
+  .feature-image-wrapper {
+    height: 300px;
+  }
+}

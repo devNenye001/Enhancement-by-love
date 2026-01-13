@@ -1,0 +1,106 @@
+/* contactSection.css */
+
+.contact-section {
+  width: 100%;
+  padding: 4rem 20px 6rem 20px; /* Extra bottom padding for space */
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- CTA Banner Container --- */
+.cta-banner {
+  width: 100%;
+  /* Soft warm gradient similar to image */
+  background: linear-gradient(135deg, #FFF9F0 0%, #FFF0F2 100%); 
+  border-radius: 24px;
+  padding: 5rem 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03); /* Very subtle depth */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Optional: Add a subtle glow effect behind content */
+.cta-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 106, 132, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* --- Typography --- */
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.5px;
+}
+
+.cta-text {
+  font-size: 1.1rem;
+  color: #333333;
+  margin: 0 0 2.5rem 0;
+  line-height: 1.6;
+}
+
+/* --- Button Styling --- */
+.cta-button {
+  background-color: #FF6A84;
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 106, 132, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e55a64;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .cta-banner {
+    padding: 3rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .cta-title {
+    font-size: 1.8rem;
+  }
+
+  .cta-text {
+    font-size: 1rem;
+    padding: 0 10px; /* Prevents text hitting edges too hard */
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px 20px;
+  }
+}

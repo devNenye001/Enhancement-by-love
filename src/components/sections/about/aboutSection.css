@@ -1,0 +1,156 @@
+/* aboutSection.css */
+
+.about-section {
+  width: 100%;
+  padding: 4rem 20px;
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Top Split Layout --- */
+.about-top-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Equal split */
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+/* Text Column Styling */
+.about-text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.brand-label {
+  color: #ff6a84; /* Requested Pink */
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.about-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin: 0 0 1.5rem 0;
+}
+
+.about-description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+/* Image Column Styling */
+.about-image-col {
+  width: 100%;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 600px; /* Fixed height for consistency */
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fcecef; /* Fallback pinkish bg */
+}
+
+.about-founder-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Bottom Feature Banner --- */
+.feature-banner {
+  background-image: url("/product5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #fffcf8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.banner-overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay to make text pop */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  padding: 0 20px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 900px) {
+  .about-top-content {
+    grid-template-columns: 1fr; /* Stack text and image */
+    gap: 2rem;
+  }
+
+  .about-heading {
+    font-size: 1.8rem;
+  }
+
+  .image-wrapper {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 3rem 20px;
+  }
+
+  .banner-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .feature-banner {
+    height: 200px;
+  }
+}
