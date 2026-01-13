@@ -17,16 +17,16 @@ const TestimonialSection = () => {
       id: 2,
       name: "Zainab Bello",
       location: "Lagos",
-      avatar: "/pfp.svg",
-      resultImage: "/testimonial.png",
+      avatar: "/pfp2.jpg",
+      resultImage: "/testimonial2.jpg",
       quote: "Finally found a brand that prioritizes health over quick fixes. My energy levels are up and I'm loving my new look!",
     },
     {
       id: 3,
       name: "Chioma Okeke",
       location: "Abuja",
-      avatar: "/pfp.svg",
-      resultImage: "/testimonial.png",
+      avatar: "/pfp3.jpg",
+      resultImage: "/testimonial3.jpg",
       quote: "The weight gain syrup worked wonders for me. I gained 5kg in just one month without feeling bloated.",
     }
   ];
