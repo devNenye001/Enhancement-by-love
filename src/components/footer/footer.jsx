@@ -56,7 +56,7 @@ const Footer = () => {
             <a href="#products">Products</a>
             <a href="#about">About The Brand</a>
             <a href="#how-it-works">How It Works</a>
-            <a href="#testimonials">Testimonials</a>
+            <a href="#testimonial">Testimonials</a>
           </Motion.div>
 
           {/* Offices */}
@@ -69,8 +69,9 @@ const Footer = () => {
             }}
           >
             <h3>Our Products</h3>
-            <p>Weight Gain Products</p>
-            <p>Weight Loss Products</p>
+            
+            <a href="#weight-gain">Weight Gain Products</a>
+            <a href="#weight-loss">Weight Loss Products</a>
           </Motion.div>
 
           {/* Contact */}

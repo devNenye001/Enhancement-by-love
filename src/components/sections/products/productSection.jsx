@@ -90,7 +90,7 @@ const ProductSection = () => {
         </Motion.div>
 
         {/* --- Category 1: Weight Gain --- */}
-        <div className="category-group">
+        <div className="category-group" id='weight-gain'>
           <div className="category-header">
             <h3 className="category-title">Weight Gain Products</h3>
             <Motion.button 
@@ -125,7 +125,7 @@ const ProductSection = () => {
         </div>
 
         {/* --- Category 2: Weight Loss --- */}
-        <div className="category-group">
+        <div className="category-group" id='weight-loss'>
           <div className="category-header">
             <h3 className="category-title">Weight Loss Products</h3>
             <Motion.button 
