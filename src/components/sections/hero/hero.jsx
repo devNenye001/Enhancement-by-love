@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.css';
+import './hero.css';
 import { motion as Motion } from "framer-motion";
 
 const Hero = () => {
