@@ -83,10 +83,10 @@ const Footer = () => {
           >
             <h3>Contact</h3>
             <p>
-              <span><FaPhoneAlt /></span> Call Us: 0916 000 6082 | 0803 879 9802
+              <span><FaPhoneAlt /></span> Call Us: 09126754369 | 08104428373
             </p>
             <p>
-              <span><MdEmail /></span> Email: Emmiphalglobalconstructioncomp@gmail.com
+              <span><MdEmail /></span> Email: Onyinyechinwankwo124@gmail.com
             </p>
           </Motion.div>
         </Motion.div>
